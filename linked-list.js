@@ -1,4 +1,4 @@
-/** Node: node for a singly linked list. */
+/* Node: node for a singly linked list. */
 
 class Node {
   constructor(val) {
@@ -7,7 +7,7 @@ class Node {
   }
 }
 
-/** LinkedList: chained together nodes. */
+/* LinkedList: chained together nodes. */
 
 class LinkedList {
   constructor(vals = []) {
@@ -18,7 +18,7 @@ class LinkedList {
     for (let val of vals) this.push(val);
   }
 
-  /** _get(idx): retrieve node at idx. */
+  /* _get(idx): retrieve node at idx. */
 
   _get(idx) {
     let cur = this.head;
@@ -32,7 +32,7 @@ class LinkedList {
     return cur;
   }
 
-  /** push(val): add new value to end of list. */
+  /* push(val): add new value to end of list. */
 
   push(val) {
     let newNode = new Node(val);
@@ -48,7 +48,7 @@ class LinkedList {
     this.length += 1;
   }
 
-  /** unshift(val): add new value to start of list. */
+  /* unshift(val): add new value to start of list. */
 
   unshift(val) {
     let newNode = new Node(val);
@@ -65,7 +65,7 @@ class LinkedList {
     this.length += 1;
   }
 
-  /** pop(): return & remove last item. */
+  /* pop(): return & remove last item. */
 
   pop() {
     return this.removeAt(this.length - 1);
@@ -77,7 +77,7 @@ class LinkedList {
     return this.removeAt(0);
   }
 
-  /** getAt(idx): get val at idx. */
+  /* getAt(idx): get val at idx. */
 
   getAt(idx) {
     if (idx >= this.length || idx < 0) {
@@ -87,7 +87,7 @@ class LinkedList {
     return this._get(idx).val;
   }
 
-  /** setAt(idx, val): set val at idx to val */
+  /* setAt(idx, val): set val at idx to val */
 
   setAt(idx, val) {
     if (idx >= this.length || idx < 0) {
@@ -98,7 +98,7 @@ class LinkedList {
     cur.val = val;
   }
 
-  /** insertAt(idx, val): add node w/val before idx. */
+  /* insertAt(idx, val): add node w/val before idx. */
 
   insertAt(idx, val) {
     if (idx > this.length || idx < 0) {
@@ -118,7 +118,7 @@ class LinkedList {
     this.length += 1;
   }
 
-  /** removeAt(idx): return & remove item at idx, */
+  /* removeAt(idx): return & remove item at idx, */
 
   removeAt(idx) {
     if (idx >= this.length || idx < 0) {
