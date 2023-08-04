@@ -71,7 +71,7 @@ class LinkedList {
     return this.removeAt(this.length - 1);
   }
 
-  /** shift(): return & remove first item. */
+  /* shift(): return & remove first item. */
 
   shift() {
     return this.removeAt(0);
